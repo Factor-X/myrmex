@@ -64,7 +64,7 @@ Startup Example
 
 >>>> Run CXF sample:
 
-Show diagram to explain goals of demo: http://www.liquid-reality.de/display/liquid/2011/12/22/Karaf+Tutorial+Part+4+-+CXF+Services+in+OSGi
+Show diagram to explain goals of demo: 
 
 $karaf@root> features:addurl mvn:org.apache.cxf.karaf/apache-cxf/2.5.1/xml/features
 $karaf@root> features:install http
