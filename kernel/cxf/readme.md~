@@ -29,9 +29,6 @@ Diagram:
 
 >>> insert here diagram
 
-https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/Overview.png
-
-
 Some remarks
 ============
 
@@ -68,8 +65,6 @@ Startup Example
 >>>> Run CXF sample:
 
 Show diagram to explain goals of demo: 
-
-https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/Overview.png
 
 $karaf@root> features:addurl mvn:org.apache.cxf.karaf/apache-cxf/2.5.1/xml/features
 $karaf@root> features:install http
