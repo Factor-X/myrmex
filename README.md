@@ -1,4 +1,4 @@
-myrmex
+Myrmex V2
 ======
 
-Myrmex Architecture PoC
+Myrmex V2 Kernel Architecture PoC -> based on ServiceMix (OSGi)
