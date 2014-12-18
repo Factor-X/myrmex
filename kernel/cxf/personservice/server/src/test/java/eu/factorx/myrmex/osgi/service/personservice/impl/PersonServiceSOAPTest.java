@@ -15,7 +15,7 @@ public class PersonServiceSOAPTest {
     private static final String PERSONSERVICE_TESTURL = "http://localhost:8282/personService";
 
 
-    @Test
+    //@Test
     public void testPutPerson() {
         PersonService personService = new PersonServiceImpl();;
         Server server = startPersonService(personService);

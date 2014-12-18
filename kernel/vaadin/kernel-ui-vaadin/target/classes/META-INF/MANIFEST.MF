@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1418642338001
+Build-Jdk: 1.7.0_51
+Built-By: florian
+Bundle-ManifestVersion: 2
+Bundle-Name: kernel-ui-vaadin
+Bundle-SymbolicName: kernel-ui-vaadin
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: eu.factorx.myrmex.kernel.vaadin;uses:="eu.factorx.utils.
+ vaadinbridge,eu.factorx.myrmex.kernel.model,com.vaadin,com.vaadin.data,
+ com.vaadin.data.util,com.vaadin.ui";version="1.0.0.SNAPSHOT"
+Export-Service: eu.factorx.utils.vaadinbridge.ApplicationFactory;alias="
+ /tasklist-vaadin"
+Import-Package: com.vaadin,com.vaadin.data,com.vaadin.data.util,com.vaad
+ in.ui,eu.factorx.myrmex.kernel.model;version="[1.0,2)",eu.factorx.utils
+ .vaadinbridge;version="[1.0,2)",org.osgi.service.blueprint;version="[1.
+ 0.0,2.0.0)"
+Import-Service: eu.factorx.myrmex.kernel.model.TaskService;multiple:=fal
+ se
+Tool: Bnd-1.50.0

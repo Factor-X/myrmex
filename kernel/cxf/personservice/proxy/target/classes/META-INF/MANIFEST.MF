@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1418913980320
+Build-Jdk: 1.7.0_51
+Built-By: florian
+Bundle-ManifestVersion: 2
+Bundle-Name: personservice-proxy
+Bundle-SymbolicName: personservice-proxy
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: eu.factorx.myrmex.osgi.service.personservice.person.Pers
+ onService
+Import-Package: eu.factorx.myrmex.osgi.service.personservice.person;vers
+ ion="[1.0,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-1.50.0

@@ -1,0 +1,8 @@
+eu/factorx/utils/vaadinbridge/internal/VaadinBridgeActivator.class
+eu/factorx/utils/vaadinbridge/internal/BundleContentHttpContext.class
+eu/factorx/utils/vaadinbridge/internal/ApplicationFactoryTracker.class
+eu/factorx/utils/vaadinbridge/internal/TargetBundleHttpContext.class
+eu/factorx/utils/vaadinbridge/internal/LogTracker.class
+eu/factorx/utils/vaadinbridge/internal/ApplicationFactoryServlet.class
+eu/factorx/utils/vaadinbridge/ApplicationFactory.class
+eu/factorx/utils/vaadinbridge/internal/HttpServiceTracker.class

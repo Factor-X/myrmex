@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+	<repository>mvn:eu.factorx.myrmex/kernel-features/1.0.0-SNAPSHOT/xml</repository>
+    <feature name="example-kernel-vaadin" version="1.0.0-SNAPSHOT">
+        <feature>example-kernel</feature>
+        <bundle>mvn:com.vaadin/vaadin/6.7.1</bundle>
+        <bundle>mvn:eu.factorx.utils/vaadinbridge/1.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:eu.factorx.myrmex.kernel.vaadin/kernel-ui-vaadin/1.0.0-SNAPSHOT</bundle>
+    </feature>
+   
+</features>

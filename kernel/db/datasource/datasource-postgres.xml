@@ -9,7 +9,7 @@ As a last step copy this file to the deploy folder
 <blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
   
    <bean id="dataSource" class="org.postgresql.ds.PGPoolingDataSource" destroy-method="close">
-      <property name="serverName" value="localhost/awac"/>
+      <property name="serverName" value="localhost/myrmex-test"/>
       <property name="user" value="play"/>
       <property name="password" value="play"/>
       <property name="dataSourceName" value="myConnectionPool"/>

@@ -164,27 +164,37 @@ The [Person|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personserv
 There is also no special code for OSGi in this project. So the model works perfectly inside and outside of an OSGi container.
 
 {note}
-The service is defined java first. SOAP and rest are used quite transparently. This is very suitable to communicate between a client and server of the same application. If the service is to be used by other applications the wsdl first approach is more suitable. In this case the model project should be configured to generate the data classes and service interface from a wsdl (see cxf wsdl_first example pom file). For rest services the java first approach is quite common in general as the client typically does not use proxy classes anyway.
+The service is defined java first. SOAP and rest are used quite transparently. This is very suitable to communicate between a client and server of the same application. If the service is to be used by other applications the wsdl first approach is more suitable. 
+In this case the model project should be configured to generate the data classes and service interface from a wsdl (see cxf wsdl_first example pom file). 
+For rest services the java first approach is quite common in general as the client typically does not use proxy classes anyway.
 {note}
 
 h2. Service implementation (server)
 
-[PersonServiceImpl|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/server/src/main/java/eu/factorx/myrmex/osgi/service/personservice/impl/PersonServiceImpl.java] is a java class the implements the service interface and contains some additional JAX-RS annotations. The way the class is defined allows it to implement a REST service and a SOAP service at the same time.
+[PersonServiceImpl|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/server/src/main/java/eu/factorx/myrmex/osgi/service/personservice/impl/PersonServiceImpl.java] 
+is a java class the implements the service interface and contains some additional JAX-RS annotations. The way the class is defined allows it to implement a REST service and a SOAP service 
+at the same time.
 
 The production deployment of the service is done in [https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/server/src/main/resources/OSGI-INF/blueprint/blueprint.xml].
 
-As the file is in the special location OSGI-INF/blueprint it is automatically processed by the blueprint implementation aries in karaf. The REST service is published using the jaxrs:server element and the SOAP service is published using the jaxws:endpoint element. The blueprint namespaces are different from spring but apart from this the xml is very similar to a spring xml.
+As the file is in the special location OSGI-INF/blueprint it is automatically processed by the blueprint implementation aries in karaf. The REST service is published using the 
+jaxrs:server element and the SOAP service is published using the jaxws:endpoint element. 
+The blueprint namespaces are different from spring but apart from this the xml is very similar to a spring xml.
 
 h2. Service proxy
 
-The service proxy project only contains a blueprint xml that uses the CXF JAXWS client to consume the SOAP service and exports it as an OSGi Service. Encapsulating the service client as an OSGi service (proxy project) is not strictly necessary but it has the advantage that the webui is then completely independent of cxf. So it is very easy to change the way the service is accessed. So this is considered a best practice in OSGi.
+The service proxy project only contains a blueprint xml that uses the CXF JAXWS client to consume the SOAP service and exports it as an OSGi Service.
+ Encapsulating the service client as an OSGi service (proxy project) is not strictly necessary but it has the advantage that the webui 
+ is then completely independent of cxf. So it is very easy to change the way the service is accessed. So this is considered a best practice in OSGi.
 
 See [blueprint.xml|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/proxy/src/main/resources/OSGI-INF/blueprint/blueprint.xml]
 
 h2. Web UI (webui)
 
-This project consumes the PersonService OSGi service and exports the PersonServlet as an OSGi service. The pax web whiteboard extender will then publish the servlet on the location /personui.
-The [PersonServlet|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/webui/src/main/java/eu/factorx/myrmex/osgi/service/personservice/webui/PersonServlet.java] gets the PersonService injected and uses to get all persons and also to add persons.
+This project consumes the PersonService OSGi service and exports the PersonServlet as an OSGi service. 
+The pax web whiteboard extender will then publish the servlet on the location /personui.
+The [PersonServlet|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/webui/src/main/java/eu/factorx/myrmex/osgi/service/personservice/webui/PersonServlet.java] 
+gets the PersonService injected and uses to get all persons and also to add persons.
 
 The wiring is done using a [blueprint context|https://github.com/Factor-X/myrmex/blob/master/kernel/cxf/personservice/webui/src/main/resources/OSGI-INF/blueprint/blueprint.xml].
 

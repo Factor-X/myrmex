@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1418642289861
+Build-Jdk: 1.7.0_51
+Built-By: florian
+Bundle-Blueprint: OSGI-INF/blueprint/context.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: kernel-persistence
+Bundle-SymbolicName: eu.factorx.myrmex.kernel-persistence
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: eu.factorx.myrmex.kernel.model.TaskService;service.expor
+ ted.interfaces="*"
+Import-Package: eu.factorx.myrmex.kernel.model;version="[1.0,2)",org.osg
+ i.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213

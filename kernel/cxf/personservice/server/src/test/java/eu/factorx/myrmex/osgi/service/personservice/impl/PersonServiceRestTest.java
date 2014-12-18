@@ -18,7 +18,7 @@ public class PersonServiceRestTest {
     private static final String PERSONSERVICE_TESTURL = "http://localhost:8282/person";
 
 
-    @Test
+    //@Test
     public void testPutPerson() {
         PersonService personService = new PersonServiceImpl();;
         Server server = startPersonService(personService);

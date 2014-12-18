@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/db.iml" filepath="$PROJECT_DIR$/kernel/db/db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/command/db-command.iml" filepath="$PROJECT_DIR$/kernel/db/command/db-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/hibernate/features/hibernate-features.iml" filepath="$PROJECT_DIR$/kernel/db/hibernate/features/hibernate-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/jpa-hibernate.iml" filepath="$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/jpa-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-features/kernel-features.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-features/kernel-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/kernel-itests.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/kernel-itests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-model/kernel-model.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-model/kernel-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-persistence/kernel-persistence.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-persistence/kernel-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-ui/kernel-ui.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-ui/kernel-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/kernel-ui-vaadin/kernel-ui-vaadin.iml" filepath="$PROJECT_DIR$/kernel/vaadin/kernel-ui-vaadin/kernel-ui-vaadin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/kernel-vaadin-features/kernel-vaadin-features.iml" filepath="$PROJECT_DIR$/kernel/vaadin/kernel-vaadin-features/kernel-vaadin-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myrmex.iml" filepath="$PROJECT_DIR$/.idea/myrmex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/myrmex-cxf.iml" filepath="$PROJECT_DIR$/kernel/cxf/myrmex-cxf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/model/personservice-model.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/model/personservice-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/personservice-parent.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/personservice-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/proxy/personservice-proxy.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/proxy/personservice-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/proxy-rest/personservice-proxy-rest.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/proxy-rest/personservice-proxy-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/server/personservice-server.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/server/personservice-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/webui/personservice-webui.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/webui/personservice-webui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/vaadin.iml" filepath="$PROJECT_DIR$/kernel/vaadin/vaadin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/vaadinbridge/vaadinbridge.iml" filepath="$PROJECT_DIR$/kernel/vaadin/vaadinbridge/vaadinbridge.iml" />
+    </modules>
+  </component>
+</project>
+

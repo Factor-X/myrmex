@@ -13,6 +13,6 @@
         <module>kernel</module>
         <module>vaadin</module>
         <module>db</module>
-</modules>
+    </modules>
 
 </project>

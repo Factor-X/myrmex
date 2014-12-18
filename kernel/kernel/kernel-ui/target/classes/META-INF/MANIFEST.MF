@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1418642290058
+Build-Jdk: 1.7.0_51
+Built-By: florian
+Bundle-Blueprint: OSGI-INF/blueprint/context.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: kernel-ui
+Bundle-SymbolicName: eu.factorx.myrmex.kernel-ui
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: eu.factorx.myrmex.kernel.ui;uses:="eu.factorx.myrmex.ker
+ nel.model,javax.servlet,javax.servlet.http";version="1.0.0.SNAPSHOT"
+Export-Service: javax.servlet.http.HttpServlet;alias="/kernel"
+Import-Package: eu.factorx.myrmex.kernel.model;version="[1.0,2)",javax.s
+ ervlet,javax.servlet.http,org.osgi.service.blueprint;version="[1.0.0,2.
+ 0.0)"
+Import-Service: eu.factorx.myrmex.kernel.model.TaskService;multiple:=fal
+ se
+Tool: Bnd-2.1.0.20130426-122213

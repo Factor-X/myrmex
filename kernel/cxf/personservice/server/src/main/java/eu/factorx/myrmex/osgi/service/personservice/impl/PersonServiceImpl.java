@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.jws.WebService;
+import javax.persistence.EntityManager;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -34,19 +35,15 @@ import eu.factorx.myrmex.osgi.service.personservice.person.PersonService;
 @Produces(MediaType.APPLICATION_XML)
 @WebService
 public class PersonServiceImpl implements PersonService {
-    Map<String, Person> personMap;
-    
-    public PersonServiceImpl() {
-        personMap = new HashMap<String, Person>();
-        Person person = createExamplePerson();
-        personMap.put("1", person);
+
+    private EntityManager em;
+
+    public void setEntityManager(EntityManager em) {
+        this.em = em;
     }
 
-    private Person createExamplePerson() {
-        Person person = new Person();
-        person.setId("1");
-        person.setName("Chris");
-        return person;
+    public PersonServiceImpl() {
+       System.out.print("Hello world... step 1");
     }
     
     /* (non-Javadoc)
@@ -56,7 +53,7 @@ public class PersonServiceImpl implements PersonService {
     @GET
     @Path("/")
     public Person[] getAll() {
-        return personMap.values().toArray(new Person[]{});
+        return (Person[]) em.createQuery("select p from Person p", Person.class).getResultList().toArray();
     }
     
     /* (non-Javadoc)
@@ -66,7 +63,7 @@ public class PersonServiceImpl implements PersonService {
     @GET
     @Path("/{id}")
     public Person getPerson(@PathParam("id") String id) {
-        return personMap.get(id);
+        return em.createQuery("select p from Person p where id = "+id, Person.class).getSingleResult();
     }
 
     /* (non-Javadoc)
@@ -76,9 +73,14 @@ public class PersonServiceImpl implements PersonService {
     @PUT
     @Path("/{id}")
     public void updatePerson(@PathParam("id") String id, Person person) {
-        person.setId(id);
-        System.out.println("Update request received for " + person.getId() + " name:" + person.getName());
-        personMap.put(id, person);
+        Person personToUpdate = getPerson(id);
+
+        if(personToUpdate!=null){
+            personToUpdate.setName(person.getName());
+            personToUpdate.setUrl(person.getUrl());
+
+            em.persist(personToUpdate);
+        }
     }
     
     /* (non-Javadoc)
@@ -88,8 +90,7 @@ public class PersonServiceImpl implements PersonService {
     @POST
     @Path("/")
     public void addPerson(Person person) {
-        System.out.println("Add request received for " + person.getId() + " name:" + person.getName());
-        personMap.put(person.getId(), person);
+        em.persist(person);
     }
 
     

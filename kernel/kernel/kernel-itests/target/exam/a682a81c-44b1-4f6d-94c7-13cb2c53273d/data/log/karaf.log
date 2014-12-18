@@ -1,0 +1,88 @@
+déc. 15, 2014 12:18:30 PM org.apache.karaf.main.Main launch
+Infos: Installing and starting initial bundles
+déc. 15, 2014 12:18:30 PM org.apache.karaf.main.Main launch
+Infos: All initial bundles installed and set to start
+déc. 15, 2014 12:18:30 PM org.apache.karaf.main.lock.SimpleFileLock lock
+Infos: Trying to lock /home/florian/idea/myrmex/kernel/kernel/kernel-itests/target/exam/a682a81c-44b1-4f6d-94c7-13cb2c53273d/lock
+déc. 15, 2014 12:18:30 PM org.apache.karaf.main.lock.SimpleFileLock lock
+Infos: Lock acquired
+déc. 15, 2014 12:18:30 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+Infos: Lock acquired. Setting startlevel to 100
+2014-12-15 12:18:49,994 | WARN  | ool-142-thread-1 | AbstractLifeCycle                | 96 - org.eclipse.jetty.aggregate.jetty-all-server - 8.1.14.v20131031 | FAILED SelectChannelConnector@0.0.0.0:8181: java.net.BindException: Adresse déjà utilisée
+java.net.BindException: Adresse déjà utilisée
+	at sun.nio.ch.Net.bind0(Native Method)[:1.7.0_51]
+	at sun.nio.ch.Net.bind(Net.java:444)[:1.7.0_51]
+	at sun.nio.ch.Net.bind(Net.java:436)[:1.7.0_51]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)[:1.7.0_51]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)[:1.7.0_51]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerImpl.start(JettyServerImpl.java:120)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl$Stopped.start(ServerControllerImpl.java:386)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl.start(ServerControllerImpl.java:69)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl$Unconfigured.configure(ServerControllerImpl.java:677)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl.configure(ServerControllerImpl.java:85)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.internal.Activator.updateController(Activator.java:342)[105:org.ops4j.pax.web.pax-web-runtime:3.0.5]
+	at org.ops4j.pax.web.service.internal.Activator$3.run(Activator.java:286)[105:org.ops4j.pax.web.pax-web-runtime:3.0.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)[:1.7.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)[:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)[:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)[:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744)[:1.7.0_51]
+2014-12-15 12:18:49,997 | WARN  | ool-142-thread-1 | AbstractLifeCycle                | 96 - org.eclipse.jetty.aggregate.jetty-all-server - 8.1.14.v20131031 | FAILED org.ops4j.pax.web.service.jetty.internal.JettyServerWrapper@3c0bc4fb: java.net.BindException: Adresse déjà utilisée
+java.net.BindException: Adresse déjà utilisée
+	at sun.nio.ch.Net.bind0(Native Method)[:1.7.0_51]
+	at sun.nio.ch.Net.bind(Net.java:444)[:1.7.0_51]
+	at sun.nio.ch.Net.bind(Net.java:436)[:1.7.0_51]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)[:1.7.0_51]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)[:1.7.0_51]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerImpl.start(JettyServerImpl.java:120)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl$Stopped.start(ServerControllerImpl.java:386)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl.start(ServerControllerImpl.java:69)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl$Unconfigured.configure(ServerControllerImpl.java:677)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl.configure(ServerControllerImpl.java:85)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.internal.Activator.updateController(Activator.java:342)[105:org.ops4j.pax.web.pax-web-runtime:3.0.5]
+	at org.ops4j.pax.web.service.internal.Activator$3.run(Activator.java:286)[105:org.ops4j.pax.web.pax-web-runtime:3.0.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)[:1.7.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)[:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)[:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)[:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744)[:1.7.0_51]
+2014-12-15 12:18:49,999 | ERROR | ool-142-thread-1 | Activator                        | 105 - org.ops4j.pax.web.pax-web-runtime - 3.0.5 | Unable to start pax web server: Exception while starting Jetty
+java.lang.RuntimeException: Exception while starting Jetty
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerImpl.start(JettyServerImpl.java:134)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl$Stopped.start(ServerControllerImpl.java:386)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl.start(ServerControllerImpl.java:69)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl$Unconfigured.configure(ServerControllerImpl.java:677)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.jetty.internal.ServerControllerImpl.configure(ServerControllerImpl.java:85)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	at org.ops4j.pax.web.service.internal.Activator.updateController(Activator.java:342)[105:org.ops4j.pax.web.pax-web-runtime:3.0.5]
+	at org.ops4j.pax.web.service.internal.Activator$3.run(Activator.java:286)[105:org.ops4j.pax.web.pax-web-runtime:3.0.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)[:1.7.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)[:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)[:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)[:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744)[:1.7.0_51]
+Caused by: java.net.BindException: Adresse déjà utilisée
+	at sun.nio.ch.Net.bind0(Native Method)[:1.7.0_51]
+	at sun.nio.ch.Net.bind(Net.java:444)[:1.7.0_51]
+	at sun.nio.ch.Net.bind(Net.java:436)[:1.7.0_51]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)[:1.7.0_51]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)[:1.7.0_51]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)[96:org.eclipse.jetty.aggregate.jetty-all-server:8.1.14.v20131031]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerImpl.start(JettyServerImpl.java:120)[106:org.ops4j.pax.web.pax-web-jetty:3.0.5]
+	... 11 more

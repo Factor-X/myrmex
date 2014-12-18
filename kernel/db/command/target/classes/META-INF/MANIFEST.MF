@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1418642343283
+Build-Jdk: 1.7.0_51
+Built-By: florian
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: db-command
+Bundle-SymbolicName: db-command
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: org.apache.karaf.shell.console;version="[2.2,4)",javax.s
+ ql,org.apache.felix.gogo.commands;version="[0.10,1)",org.apache.felix.s
+ ervice.command;version="[0.10,1)";status=provisional,org.apache.karaf.s
+ hell.console.completer;version="[2.2,3)",org.osgi.framework;version="[1
+ .5,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213

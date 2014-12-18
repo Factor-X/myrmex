@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1418913981565
+Build-Jdk: 1.7.0_51
+Built-By: florian
+Bundle-ManifestVersion: 2
+Bundle-Name: personservice-webui
+Bundle-SymbolicName: personservice-webui
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: eu.factorx.myrmex.osgi.service.personservice.webui;uses:
+ ="javax.servlet,eu.factorx.myrmex.osgi.service.personservice.person,jav
+ ax.servlet.http";version="1.0.0.SNAPSHOT"
+Export-Service: javax.servlet.http.HttpServlet;alias="/personui"
+Import-Package: eu.factorx.myrmex.osgi.service.personservice.person;vers
+ ion="[1.0,2)",javax.servlet;version="[2.5,4)",javax.servlet.http;versio
+ n="[2.5,4)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Import-Service: eu.factorx.myrmex.osgi.service.personservice.person.Pers
+ onService;multiple:=false
+Tool: Bnd-1.50.0

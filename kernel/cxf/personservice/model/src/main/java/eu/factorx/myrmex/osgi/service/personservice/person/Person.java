@@ -17,11 +17,17 @@
 package eu.factorx.myrmex.osgi.service.personservice.person;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.*;
 
 @XmlRootElement
+@Entity
 public class Person {
+
+    @Id
     String id;
+    @Column(nullable = false)
     String name;
+    @Column(nullable = false)
     String url;
     
     public String getId() {
