@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/kernel/db/db.iml" filepath="$PROJECT_DIR$/kernel/db/db.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/db/command/db-command.iml" filepath="$PROJECT_DIR$/kernel/db/command/db-command.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/db/hibernate/features/hibernate-features.iml" filepath="$PROJECT_DIR$/kernel/db/hibernate/features/hibernate-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/jpa-hibernate.iml" filepath="$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/jpa-hibernate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-features/kernel-features.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-features/kernel-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/kernel-itests.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/kernel-itests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-model/kernel-model.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-model/kernel-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-persistence/kernel-persistence.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-persistence/kernel-persistence.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-ui/kernel-ui.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-ui/kernel-ui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/kernel-ui-vaadin/kernel-ui-vaadin.iml" filepath="$PROJECT_DIR$/kernel/vaadin/kernel-ui-vaadin/kernel-ui-vaadin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/kernel-vaadin-features/kernel-vaadin-features.iml" filepath="$PROJECT_DIR$/kernel/vaadin/kernel-vaadin-features/kernel-vaadin-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/myrmex.iml" filepath="$PROJECT_DIR$/.idea/myrmex.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/myrmex-cxf.iml" filepath="$PROJECT_DIR$/kernel/cxf/myrmex-cxf.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/model/personservice-model.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/model/personservice-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/personservice-parent.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/personservice-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/proxy/personservice-proxy.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/proxy/personservice-proxy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/proxy-rest/personservice-proxy-rest.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/proxy-rest/personservice-proxy-rest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/server/personservice-server.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/server/personservice-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/webui/personservice-webui.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/webui/personservice-webui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/vaadin.iml" filepath="$PROJECT_DIR$/kernel/vaadin/vaadin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/vaadinbridge/vaadinbridge.iml" filepath="$PROJECT_DIR$/kernel/vaadin/vaadinbridge/vaadinbridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/model/src/main/main.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/model/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-ui/src/main/main1.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-ui/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/src/main/main10.iml" filepath="$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/src/main/main10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/command/src/main/main11.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/command/src/main/main11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/server/src/main/main12.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/server/src/main/main12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/deployer/bundle/src/main/main13.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/deployer/bundle/src/main/main13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-persistence/src/main/main2.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-persistence/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/web/src/main/main3.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/web/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/kernel-ui-vaadin/src/main/main4.iml" filepath="$PROJECT_DIR$/kernel/vaadin/kernel-ui-vaadin/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/webui/src/main/main5.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/webui/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/vaadin/vaadinbridge/src/main/main6.iml" filepath="$PROJECT_DIR$/kernel/vaadin/vaadinbridge/src/main/main6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/command/src/main/main7.iml" filepath="$PROJECT_DIR$/kernel/db/command/src/main/main7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/dump/src/main/main8.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/target/exam/fa016e21-ea0c-4b6e-b9e0-685c95ec40de/demos/dump/src/main/main8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-model/src/main/main9.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-model/src/main/main9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/cxf/personservice/server/src/test/test.iml" filepath="$PROJECT_DIR$/kernel/cxf/personservice/server/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/src/test/test1.iml" filepath="$PROJECT_DIR$/kernel/db/hibernate/jpa-hibernate/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kernel/kernel/kernel-itests/src/test/test2.iml" filepath="$PROJECT_DIR$/kernel/kernel/kernel-itests/src/test/test2.iml" />
     </modules>
   </component>
 </project>

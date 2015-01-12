@@ -6,9 +6,17 @@
         <additionalProperties>
           <property key="Import-Package" value="javax.ws.rs.*;version=&quot;[1.1,3)&quot;,org.apache.cxf.*;version=&quot;[2,4)&quot;,*" />
           <property key="Bundle-Name" value="personservice-server" />
-          <property key="Include-Resource" value="OSGI-INF/blueprint/blueprint.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/blueprint.xml" />
+          <property key="Include-Resource" value="OSGI-INF/blueprint/blueprint.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/blueprint.xml,META-INF/persistence.xml=$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
         </additionalProperties>
         <additionalJARContents />
+      </configuration>
+    </facet>
+    <facet type="osgiBundleFacet" name="OSGi Bundle">
+      <configuration />
+    </facet>
+    <facet type="osgiBundleFacetType" name="OSGi Bundle">
+      <configuration>
+        <properties />
       </configuration>
     </facet>
   </component>
@@ -29,7 +37,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxrs:2.7.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cxf:cxf-api:2.7.5" level="project" />

@@ -36,6 +36,7 @@
       <module>command</module>
       <module>hibernate/jpa-hibernate</module>
       <module>hibernate/features</module>
+      <module>examplejpa</module>
     </modules>
 
 </project>
